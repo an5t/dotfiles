@@ -49,6 +49,11 @@ return require('packer').startup(function(use)
   }
 
   use {
+    'tpope/vim-unimpaired',
+    requires = 'tpope/vim-repeat',
+  }
+
+  use {
     'windwp/nvim-autopairs',
     config = function()
       require('nvim-autopairs').setup {}
