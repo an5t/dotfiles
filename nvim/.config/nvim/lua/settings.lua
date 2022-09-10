@@ -1,4 +1,5 @@
 vim.opt.cursorline = true -- highlight current line
+vim.opt.laststatus = 3
 vim.opt.mouse = 'a' -- enable mouse in all modes
 vim.opt.number = true -- show line numbers
 vim.opt.showmode = false -- disable mode indicator

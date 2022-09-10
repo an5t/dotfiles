@@ -4,7 +4,6 @@ return function()
       theme = 'onedark',
       icons_enabled = false,
       section_separators = '',
-      disabled_filetypes = { 'packer', 'NvimTree' },
     },
     sections = {
       lualine_b = {
