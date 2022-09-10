@@ -1,7 +1,6 @@
 vim.opt.cursorline = true -- highlight current line
 vim.opt.mouse = 'a' -- enable mouse in all modes
 vim.opt.number = true -- show line numbers
-vim.opt.scrolloff = 10
 vim.opt.showmode = false -- disable mode indicator
 vim.opt.termguicolors = true -- true color terminal
 vim.opt.updatetime = 700
