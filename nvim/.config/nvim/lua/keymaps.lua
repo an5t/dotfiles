@@ -10,8 +10,6 @@ map('n', '<C-l>', '<cmd>wincmd l<CR>', opts)
 
 map('t', '<ESC>', '<C-\\><C-n>', opts)
 
-map('n', ';n', '<cmd>nohlsearch<CR>', opts)
-
 -- Diagnostic
 map('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
 map('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
