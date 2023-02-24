@@ -23,5 +23,5 @@ map('n', '<leader>fb', '<cmd>lua require("telescope.builtin").buffers()<cr>', op
 map('n', '<leader>fh', '<cmd>lua require("telescope.builtin").help_tags()<cr>', opts)
 map('n', '<leader>fk', '<cmd>lua require("telescope.builtin").keymaps()<cr>', opts)
 
--- NvimTree
 map('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', opts)
+map('n', '<F4>', ':Git<CR>', opts)
