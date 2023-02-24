@@ -4,6 +4,7 @@ return function()
       theme = 'onedark',
       icons_enabled = false,
       section_separators = '',
+      ignore_focus = { 'NvimTree' },
     },
     sections = {
       lualine_b = {
