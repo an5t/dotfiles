@@ -36,7 +36,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
   table.insert(runtime_path, 'lua/?.lua')
   table.insert(runtime_path, 'lua/?/init.lua')
 
-  lspconfig['sumneko_lua'].setup {
+  lspconfig['lua_ls'].setup {
     on_attach = on_attach,
     capabilities = capabilities,
     settings = {
