@@ -1,3 +1,14 @@
+--[[
+n: Normal mode.
+i: Insert mode.
+x: Visual mode.
+s: Selection mode.
+v: Visual + Selection.
+t: Terminal mode.
+o: Operator-pending.
+'': An empty string. Is the equivalent of n + v + o.
+]]
+
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
