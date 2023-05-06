@@ -178,6 +178,11 @@ return require('packer').startup(function(use)
   use 'lervag/vimtex'
   use 'raimon49/requirements.txt.vim'
 
+  use {
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  }
+
   if Bootstrap then
     require('packer').sync()
   end
