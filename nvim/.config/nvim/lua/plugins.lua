@@ -22,6 +22,17 @@ return require('packer').startup(function(use)
           IndentBlanklineChar = { fg = '$bg3' },
           IndentBlanklineContextChar = { fg = '$grey' },
           NvimTreeIndentMarker = { fg = '$bg3' },
+          NvimTreeStatusLine = { fg = '$bg2', bg = '$bg_d' },
+          NvimTreeStatusLineNC = { fg = '$bg1', bg = '$bg_d' },
+          NvimTreeWinSeparator  = { fg = '$bg_d', bg = '$bg_d' },
+          StatusLine = { bg = '$bg1' },
+          StatusLineNC = { bg = '$bg1' },
+        },
+        -- Plugins Config --
+        diagnostics = {
+            darker = true, -- darker colors for diagnostic
+            undercurl = true, -- use undercurl instead of underline for diagnostics
+            background = true, -- use background color for virtual text
         },
       }
       onedark.load()
