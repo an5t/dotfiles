@@ -157,11 +157,15 @@ return require('packer').startup(function(use)
     config = function()
       require('formatter').setup {
         filetype = {
+          go = {
+            require('formatter.filetypes.go').gofmt,
+            require('formatter.filetypes.go').goimports,
+          },
           python = {
             require('formatter.filetypes.python').autopep8,
             require('formatter.filetypes.python').black,
             require('formatter.filetypes.python').isort,
-          }
+          },
         }
       }
     end
