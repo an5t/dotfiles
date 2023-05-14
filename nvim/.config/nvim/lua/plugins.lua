@@ -123,11 +123,25 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter-textobjects'
 
   use {
-    'neovim/nvim-lspconfig',
-    config = require('config.lsp').config,
+    'williamboman/mason.nvim',
+    config = function()
+      require('mason').setup()
+    end
   }
 
-  use 'williamboman/nvim-lsp-installer'
+  use {
+    'williamboman/mason-lspconfig.nvim',
+    after = 'mason.nvim',
+    config = function()
+      require('mason-lspconfig').setup()
+    end
+  }
+
+  use {
+    'neovim/nvim-lspconfig',
+    after = 'mason-lspconfig.nvim',
+    config = require('config.lsp').config,
+  }
 
   use {
     'hrsh7th/nvim-cmp', -- autocompletion plugin
