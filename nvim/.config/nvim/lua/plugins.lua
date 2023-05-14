@@ -189,6 +189,22 @@ return require('packer').startup(function(use)
     config = require 'config.lualine',
   }
 
+  use {
+    'NvChad/nvim-colorizer.lua',
+    config = function()
+      require 'colorizer'.setup {
+        filetypes = {
+          'css',
+          'javascript',
+          'html',
+        },
+        user_default_options = {
+          mode = 'virtualtext',
+        },
+      }
+    end
+  }
+
   use 'cmcaine/vim-uci'
   use 'lervag/vimtex'
   use 'raimon49/requirements.txt.vim'
