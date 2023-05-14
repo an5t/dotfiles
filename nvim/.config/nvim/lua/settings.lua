@@ -1,11 +1,15 @@
 vim.opt.cursorline = true -- highlight current line
-vim.opt.laststatus = 3
 vim.opt.mouse = 'a' -- enable mouse in all modes
 vim.opt.number = true -- show line numbers
 vim.opt.showmode = false -- disable mode indicator
 vim.opt.termguicolors = true -- true color terminal
 vim.opt.updatetime = 700
 vim.opt.wildmode = 'longest:full' -- command-line completion mode
+vim.opt.wrap = false
+
+vim.opt.hlsearch = false
+vim.opt.ignorecase = true -- ignore uppercase letters in search
+vim.opt.smartcase = true -- ignore uppercase letters unless the search term has an uppercase letter
 
 vim.opt.langmap = 'ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;'
     .. '`qwertyuiop[]asdfghjkl\\;\'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>'
