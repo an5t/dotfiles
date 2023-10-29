@@ -17,6 +17,11 @@ map('n', '<C-j>', '<cmd>wincmd j<CR>', opts)
 map('n', '<C-k>', '<cmd>wincmd k<CR>', opts)
 map('n', '<C-l>', '<cmd>wincmd l<CR>', opts)
 
+map('n', '<M-h>', '<cmd>wincmd h<CR>', opts)
+map('n', '<M-j>', '<cmd>wincmd j<CR>', opts)
+map('n', '<M-k>', '<cmd>wincmd k<CR>', opts)
+map('n', '<M-l>', '<cmd>wincmd l<CR>', opts)
+
 map('t', '<ESC>', '<C-\\><C-n>', opts)
 
 -- Diagnostic
@@ -35,4 +40,6 @@ map('n', '<leader>fh', '<cmd>lua require("telescope.builtin").help_tags()<cr>', 
 map('n', '<leader>fk', '<cmd>lua require("telescope.builtin").keymaps()<cr>', opts)
 
 map('n', '<C-n>', ':NvimTreeFindFileToggle<CR>', opts)
+map('n', '<M-n>', ':NvimTreeFindFileToggle<CR>', opts)
+
 map('n', '<F4>', ':Git<CR>', opts)
