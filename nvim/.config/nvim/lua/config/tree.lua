@@ -20,7 +20,13 @@ return function()
       special_files = {},
     },
     filters = {
-      dotfiles = true,
+      custom = {
+        "^.direnv$",
+        "^.git$",
+        "^.mypy_cache$",
+        "^.pytest_cache$",
+        "^__pycache__$",
+      },
     },
     actions = {
       open_file = {
