@@ -3,7 +3,7 @@ return function()
     hijack_directories = { enable = false },
     respect_buf_cwd = true,
     view = {
-      width = 35,
+      width = 36,
     },
     renderer = {
       add_trailing = true,
