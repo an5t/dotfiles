@@ -17,6 +17,7 @@ return function()
         }
       },
       indent_markers = { enable = true },
+      special_files = {},
     },
     filters = {
       dotfiles = true,
