@@ -232,6 +232,9 @@ return require('packer').startup(function(use)
   use {
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
+    config = function()
+      vim.g.mkdp_auto_close = false
+    end,
   }
 
   if Bootstrap then
