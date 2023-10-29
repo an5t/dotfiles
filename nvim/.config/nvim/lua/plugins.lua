@@ -53,6 +53,7 @@ return require('packer').startup(function(use)
 
   use 'tpope/vim-fugitive'
   use 'tommcdo/vim-fubitive' -- Bitbucket support in :GBrowse
+  use 'shumphrey/fugitive-gitlab.vim'
 
   use {
     'tpope/vim-surround',
