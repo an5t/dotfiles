@@ -182,6 +182,9 @@ return require('packer').startup(function(use)
             require('formatter.filetypes.python').black,
             require('formatter.filetypes.python').isort,
           },
+          json = {
+            require('formatter.filetypes.json').jq,
+          },
         }
       }
     end
