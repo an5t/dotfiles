@@ -7,6 +7,9 @@ vim.opt.updatetime = 700
 vim.opt.wildmode = 'longest:full' -- command-line completion mode
 vim.opt.wrap = false
 
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
 vim.opt.hlsearch = false
 vim.opt.ignorecase = true -- ignore uppercase letters in search
 vim.opt.smartcase = true -- ignore uppercase letters unless the search term has an uppercase letter
