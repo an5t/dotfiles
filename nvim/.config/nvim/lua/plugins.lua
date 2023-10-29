@@ -19,8 +19,8 @@ return require('packer').startup(function(use)
       onedark.setup {
         style = 'warm',
         highlights = {
-          IndentBlanklineChar = { fg = '$bg3' },
-          IndentBlanklineContextChar = { fg = '$grey' },
+          IblIndent = { fg = '$bg3' },
+          IblScope = { fg = '$grey' },
           NvimTreeIndentMarker = { fg = '$bg3' },
           NvimTreeStatusLine = { fg = '$bg2', bg = '$bg_d' },
           NvimTreeStatusLineNC = { fg = '$bg1', bg = '$bg_d' },
@@ -77,8 +77,9 @@ return require('packer').startup(function(use)
   use {
     'lukas-reineke/indent-blankline.nvim',
     config = function()
-      require('indent_blankline').setup {
-        show_current_context = false,
+      require('ibl').setup {
+        indent = { char = '▏'},
+        scope = { enabled = false },
       }
     end
   }
