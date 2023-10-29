@@ -1,3 +1,5 @@
+setlocal colorcolumn=140
+
 nnoremap <localleader>F :Format gofmt<CR>
 vnoremap <localleader>F :Format gofmt<CR>
 nnoremap <localleader>I :Format goimports<CR>
