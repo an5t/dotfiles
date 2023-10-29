@@ -32,6 +32,13 @@ return function()
       open_file = {
         -- quit_on_open = true,
       }
-    }
+    },
+    git = {
+      enable = true,
+    },
+    modified = {
+      enable = true,
+      show_on_open_dirs = false,
+    },
   }
 end
