@@ -3,7 +3,7 @@ local function config()
 
   require('telescope').setup {
     defaults = {
-      file_ignore_patterns = { '.git/' },
+      file_ignore_patterns = { '.git/', '.direnv/'},
 
       -- add "--hidden" to default value
       vimgrep_arguments = {
@@ -24,7 +24,6 @@ local function config()
         hidden = true,
       },
       live_grep = {
-        theme = "dropdown",
         hidden = true,
       },
       buffers = {
@@ -35,14 +34,14 @@ local function config()
           }
         }
       },
-      help_tags = {
-        theme = "dropdown",
-      },
       lsp_definitions = {
-        theme = "dropdown",
+        theme = "ivy",
       },
       lsp_references = {
-        theme = "dropdown",
+        theme = "ivy",
+      },
+      lsp_implementations = {
+        theme = "ivy",
       },
     },
   }
