@@ -1,10 +1,9 @@
 local function config()
-  local actions = require 'telescope.actions'
+  local actions = require("telescope.actions")
 
-  require('telescope').setup {
+  require("telescope").setup({
     defaults = {
-      file_ignore_patterns = { '.git/', '.direnv/'},
-
+      file_ignore_patterns = { ".git/", ".direnv/" },
       -- add "--hidden" to default value
       vimgrep_arguments = {
         "rg",
@@ -17,7 +16,6 @@ local function config()
         "--hidden",
       },
     },
-
     pickers = {
       find_files = {
         theme = "dropdown",
@@ -31,8 +29,8 @@ local function config()
         mappings = {
           i = {
             ["<Del>"] = actions.delete_buffer,
-          }
-        }
+          },
+        },
       },
       lsp_definitions = {
         theme = "ivy",
@@ -44,7 +42,13 @@ local function config()
         theme = "ivy",
       },
     },
-  }
+  })
 end
 
-return config
+return {
+  "nvim-telescope/telescope.nvim",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  config = config,
+}
