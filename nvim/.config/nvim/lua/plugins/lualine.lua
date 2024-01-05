@@ -6,7 +6,7 @@ return {
       icons_enabled = false,
       section_separators = "",
       disabled_filetypes = {
-        statusline = { "NvimTree", "packer" },
+        statusline = { "NvimTree" },
       },
     },
     sections = {
