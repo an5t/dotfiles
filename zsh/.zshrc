@@ -31,4 +31,5 @@ bindkey "^X^E" edit-command-line
 alias g='git status'
 alias t='task'
 
-eval "$(starship init zsh)"
+command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
+command -v kubectl >/dev/null 2>&1 && source <(kubectl completion zsh)
