@@ -1,3 +1,7 @@
+local function codeium()
+  return "{…}" .. vim.api.nvim_call_function("codeium#GetStatusString", {})
+end
+
 return {
   "nvim-lualine/lualine.nvim",
   opts = {
@@ -14,8 +18,8 @@ return {
       lualine_b = {},
       lualine_c = { { "filename", path = 1 }, "diff" },
       lualine_x = { "encoding", "fileformat", "filetype" },
-      lualine_y = { "location" },
-      lualine_z = {},
+      lualine_y = { codeium },
+      lualine_z = { "location" },
     },
     inactive_sections = {
       lualine_a = {},
