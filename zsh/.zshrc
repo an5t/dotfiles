@@ -1,6 +1,9 @@
 # Use emacs keybindings even if EDITOR is set to vi
 bindkey -e
 
+# Fix Del key
+bindkey "^[[3~" delete-char
+
 setopt appendhistory histignorealldups histignorespace
 
 HISTSIZE=10000
