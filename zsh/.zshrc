@@ -33,3 +33,4 @@ alias t='task'
 
 command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
 command -v kubectl >/dev/null 2>&1 && source <(kubectl completion zsh)
+source ~/.magnit_autocomplete.zsh
