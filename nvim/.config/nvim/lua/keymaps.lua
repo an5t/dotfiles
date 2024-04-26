@@ -14,6 +14,7 @@ local map = vim.api.nvim_set_keymap
 map("n", ";", ":", { noremap = true })
 map("n", ":", ";", { noremap = true })
 map("n", "<Space>", "za", { noremap = true })
+map("n", "<CR>", "<cmd>update<CR>", { noremap = true })
 
 local opts = { noremap = true, silent = true }
 
