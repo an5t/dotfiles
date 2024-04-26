@@ -10,6 +10,10 @@ o: Operator-pending.
 ]]
 
 local map = vim.api.nvim_set_keymap
+
+map("n", ";", ":", { noremap = true })
+map("n", ":", ";", { noremap = true })
+
 local opts = { noremap = true, silent = true }
 
 map("n", "<C-h>", "<cmd>wincmd h<CR>", opts)
