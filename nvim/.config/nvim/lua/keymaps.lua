@@ -11,8 +11,9 @@ o: Operator-pending.
 
 local map = vim.api.nvim_set_keymap
 
-map("n", ";", ":", { noremap = true })
-map("n", ":", ";", { noremap = true })
+map("", ";", ":", { noremap = true })
+map("", ":", ";", { noremap = true })
+
 map("n", "<Space>", "za", { noremap = true })
 
 local opts = { noremap = true, silent = true }
