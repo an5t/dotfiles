@@ -48,4 +48,4 @@ map("n", "<leader>fk", '<cmd>lua require("telescope.builtin").keymaps()<cr>', op
 map("n", "<C-n>", ":NvimTreeFindFileToggle<CR>", opts)
 map("n", "<M-n>", ":NvimTreeFindFileToggle<CR>", opts)
 
-map("n", "<F4>", ":Neogit<CR>", opts)
+map("n", "<F4>", ":Git<CR>", opts)
