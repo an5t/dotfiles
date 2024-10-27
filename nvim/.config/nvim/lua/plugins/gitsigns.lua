@@ -3,11 +3,11 @@ return {
 
   opts = {
     signs = {
-      add = { hl = "GitSignsAdd", text = "│" },
-      change = { hl = "GitSignsChange", text = "│" },
-      delete = { hl = "GitSignsDelete", text = "_" },
-      topdelete = { hl = "GitSignsDelete", text = "^" },
-      changedelete = { hl = "GitSignsChange", text = "│" },
+      add = { text = "│" },
+      change = { text = "│" },
+      delete = { text = "_" },
+      topdelete = { text = "^" },
+      changedelete = { text = "│" },
     },
 
     current_line_blame_opts = {
