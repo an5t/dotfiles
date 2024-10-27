@@ -1,3 +1,16 @@
+function pgformat()
+  return {
+    exe = "pg_format",
+    args = {
+      "--inplace",
+      "--nogrouping",
+      "--no-extra-line",
+      "-",
+    },
+    stdin = true,
+  }
+end
+
 return {
   "mhartington/formatter.nvim",
   config = function()
@@ -6,6 +19,8 @@ return {
         go = {
           require("formatter.filetypes.go").gofmt,
           require("formatter.filetypes.go").goimports,
+          require("formatter.filetypes.json").jq,
+          pgformat,
         },
         python = {
           require("formatter.filetypes.python").autopep8,
@@ -17,6 +32,12 @@ return {
         },
         json = {
           require("formatter.filetypes.json").jq,
+        },
+        sql = {
+          pgformat,
+        },
+        html = {
+          require("formatter.filetypes.html").prettier,
         },
       },
     })
